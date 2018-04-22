@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5630bfb3-ceb9-4004-a130-940ef43e1ee4" name="Default" comment="" />
+    <list default="true" id="5630bfb3-ceb9-4004-a130-940ef43e1ee4" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/HW2.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/BattleField$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/BattleField$2.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/BattleField$3.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/BattleField.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/BattleGround$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/BattleGround.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/Caption.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/End.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/Game.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/Host$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/Host.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/Join$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/Join.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/PackageThread.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/Screen.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/HW2/Waiting.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/BattleField.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/BattleGround.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/End.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Host.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Join.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/PackageThread.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Screen.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -327,12 +357,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524238256047</updated>
-      <workItem from="1524238257861" duration="12215000" />
+      <workItem from="1524238257861" duration="12305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12215000" />
+    <option name="totallyTimeSpent" value="12305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="727" extended-state="6" />
