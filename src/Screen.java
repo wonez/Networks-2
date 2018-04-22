@@ -73,6 +73,7 @@ public class Screen extends JFrame implements ActionListener {
         if(e.getActionCommand().equals("Host")){
 
             Game.TYPE = 0;
+            Game.I = "Host";
             this.dispose();
             Host host = new Host();
             host.setLocationRelativeTo(null);
@@ -81,6 +82,7 @@ public class Screen extends JFrame implements ActionListener {
         }else if(e.getActionCommand().equals("Join")){
 
             Game.TYPE = 1;
+            Game.I = "Join";
             String ip;
 
             boolean b = true;

@@ -3,6 +3,7 @@ import java.net.UnknownHostException;
 
 public class Game{
 
+    public static String I;
     public static String ME = "";
     public static String OPPONENT = "";
     public static int TYPE = -1;

@@ -16,6 +16,10 @@ public class Join extends JFrame{
     private Scanner listener;
     private PrintStream sender;
 
+    private static Socket endSocket1;
+    public static Scanner endListener1;
+    public static PrintStream endSender1;
+
     private String msg;
 
     public Join(){
@@ -26,6 +30,20 @@ public class Join extends JFrame{
 
         Waiting waiting = new Waiting();
         add(waiting, BorderLayout.CENTER);
+
+        try {
+
+            endSocket1 = new Socket(Game.IP, 8888);
+            endSender1 = new PrintStream(endSocket1.getOutputStream());
+            endListener1 = new Scanner(endSocket1.getInputStream());
+
+            socket = new Socket(Game.IP, Game.PORT);
+            sender = new PrintStream(socket.getOutputStream());
+            listener = new Scanner(socket.getInputStream());
+
+        } catch (IOException ex){
+            System.out.println(ex.getMessage());
+        }
 
         sendGameRequest();
 

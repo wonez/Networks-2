@@ -12,6 +12,11 @@ public class Host extends JFrame{
     private Scanner listener;
     private PrintStream sender;
 
+    private ServerSocket endServerSocket;
+    public static Socket endSocket0;
+    public static Scanner endListener0;
+    public static PrintStream endSender0;
+
     public Host() {
 
         super("Host");
@@ -20,6 +25,7 @@ public class Host extends JFrame{
 
         try {
             serverSocket = new ServerSocket(Game.PORT);
+            endServerSocket = new ServerSocket(8888);
         } catch (IOException e) {
             System.out.println("Socket already created");
         }
@@ -31,9 +37,14 @@ public class Host extends JFrame{
         PackageThread pThread = new PackageThread(this) {
             @Override
             public void handleListening() throws Exception {
+
                 socket = serverSocket.accept();
                 listener = new Scanner(socket.getInputStream());
                 sender = new PrintStream(socket.getOutputStream());
+
+                endSocket0 = endServerSocket.accept();
+                endListener0 = new Scanner(endSocket0.getInputStream());
+                endSender0 = new PrintStream(endSocket0.getOutputStream());
             }
 
             @Override

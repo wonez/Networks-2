@@ -21,10 +21,6 @@ public class BattleField extends JFrame implements ActionListener{
     private Scanner listener;
     private PrintStream sender;
 
-    private Socket endSocket;
-    private Scanner endListener;
-    private PrintStream endSender;
-
     public BattleField(JButton[] fields,  Scanner listener, PrintStream sender) {
 
         super("BattleShip");
@@ -64,18 +60,13 @@ public class BattleField extends JFrame implements ActionListener{
             }
         }
 
-        try {
-            endSocket = new Socket(Game.IP, 8888);
-            endSender = new PrintStream(endSocket.getOutputStream());
-            endListener = new Scanner(endSocket.getInputStream());
-        }catch (IOException e){
-            System.out.println("Socket already created");
-        }
-
         PackageThread pt = new PackageThread(this) {
             @Override
             public void handleListening() throws Exception {
-                msg = endListener.nextLine();
+                if(Game.I.equals("Host"))
+                    msg = Host.endListener0.nextLine();
+                else
+                    msg = Join.endListener1.nextLine();
             }
 
             @Override
@@ -190,7 +181,10 @@ public class BattleField extends JFrame implements ActionListener{
             end.setVisible(true);
 
             String msg = "You Lost";
-            endSender.println(msg);
+            if(Game.I.equals("Host"))
+               Host.endSender0.println(msg);
+            else
+                Join.endSender1.println(msg);
             return true;
         }
         return false;

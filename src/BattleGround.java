@@ -82,8 +82,6 @@ public class BattleGround extends JFrame implements ActionListener {
             @Override
             public void handleConnection() throws Exception {
 
-
-//                String msg = new String(receivedBuffer);
                 if(msg.contains("I am Ready")){
                     textLabel.setText(Game.OPPONENT + " is ready");
                     opponentReady = true;
@@ -146,14 +144,6 @@ public class BattleGround extends JFrame implements ActionListener {
             readyButton.setEnabled(false);
         }
 
-//        sendBuffer = msg.getBytes();
-//        packet = new DatagramPacket(sendBuffer, msg.length(), ip, port);
-//
-//        try {
-//            socket.send(packet);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
         sender.println(msg);
 
         if(opponentReady) {
